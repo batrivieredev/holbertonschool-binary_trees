@@ -34,6 +34,8 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
 int binary_tree_is_leaf(const binary_tree_t *node);
 /*root*/
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
+/*inorder*/
+void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
 
 
 #endif /* BINARY_TREES_H */
