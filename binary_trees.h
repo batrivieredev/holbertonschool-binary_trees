@@ -36,9 +36,9 @@ int binary_tree_is_leaf(const binary_tree_t *node); /*fonction leaf*/
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int)); /*fonction preorder*/
 /*inorder*/
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int)); /*fonction postorder*/
-size_t binary_tree_height(const binary_tree_t *tree);
+size_t binary_tree_height(const binary_tree_t *tree); /*fonction height*/
 size_t binary_tree_depth(const binary_tree_t *tree); /*fonction depth*/
-/*size*/
+size_t binary_tree_size(const binary_tree_t *tree); /*fonction size*/
 size_t binary_tree_leaves(const binary_tree_t *tree); /*fonction leaves*/
 /*nodes*/
 int binary_tree_balance(const binary_tree_t *tree); /*fonction balance*/
