@@ -27,18 +27,22 @@ typedef struct binary_tree_s avl_t;
 typedef struct binary_tree_s heap_t;
 
 void binary_tree_print(const binary_tree_t *tree);
-binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
+binary_tree_t *binary_tree_node(binary_tree_t *parent, int value); /* fonction node */
 /* fonction left */
-binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
+binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value); /* fonction right */
 /*delete*/
-int binary_tree_is_leaf(const binary_tree_t *node);
+int binary_tree_is_leaf(const binary_tree_t *node); /*fonction leaf*/
 /*root*/
-void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
+void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int)); /*fonction preorder*/
 /*inorder*/
-void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
+void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int)); /*fonction postorder*/
 /*height*/
-size_t binary_tree_depth(const binary_tree_t *tree);
+size_t binary_tree_depth(const binary_tree_t *tree); /*fonction depth*/
 /*size*/
-size_t binary_tree_leaves(const binary_tree_t *tree);
+size_t binary_tree_leaves(const binary_tree_t *tree); /*fonction leaves*/
+/*nodes*/
+int binary_tree_balance(const binary_tree_t *tree); /*fonction balance*/
+
+
 
 #endif /* BINARY_TREES_H */
