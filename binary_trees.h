@@ -44,6 +44,7 @@ size_t binary_tree_leaves(const binary_tree_t *tree); /*fonction leaves*/
 int binary_tree_balance(const binary_tree_t *tree); /*fonction balance*/
 /*full*/
 int binary_tree_is_perfect(const binary_tree_t *tree); /*fonction perfect*/
-
+binary_tree_t *binary_tree_sibling(binary_tree_t *node); /*fonction sibling*/
+binary_tree_t *binary_tree_uncle(binary_tree_t *node); /*fonction uncle*/
 
 #endif /* BINARY_TREES_H */
