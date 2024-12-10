@@ -40,7 +40,7 @@ size_t binary_tree_height(const binary_tree_t *tree); /*fonction height*/
 size_t binary_tree_depth(const binary_tree_t *tree); /*fonction depth*/
 size_t binary_tree_size(const binary_tree_t *tree); /*fonction size*/
 size_t binary_tree_leaves(const binary_tree_t *tree); /*fonction leaves*/
-/*nodes*/
+size_t binary_tree_nodes(const binary_tree_t *tree);/*nodes*/
 int binary_tree_balance(const binary_tree_t *tree); /*fonction balance*/
 /*full*/
 int binary_tree_is_perfect(const binary_tree_t *tree); /*fonction perfect*/
