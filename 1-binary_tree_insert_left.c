@@ -12,14 +12,17 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 	if (parent == NULL)
 		return (NULL);
 
-	new_node = malloc(sizeof(binary_tree_t));
+	new_node = binary_tree_node(parent, value);
+
 	if (new_node == NULL)
 		return (NULL);
 
-	new_node->parent = parent;
-	new_node->left = NULL;
-	new_node->right = NULL;
-	new_node->n = value;
+	/*assignation of value n and link to parent r made through func call*/
+	new_node->left = parent->left;
+
+	if (new_node->left != NULL)
+		new_node->left->parent = new_node;
+
 	parent->left = new_node;
 
 	return (new_node);
